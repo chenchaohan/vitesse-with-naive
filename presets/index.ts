@@ -21,7 +21,7 @@ import {
 	dirResolver,
 	DirResolverHelper
 } from 'vite-auto-import-resolvers'
-import { VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
+import { VueUseComponentsResolver, AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import { restart } from './shared/restart'
 import OptimizationPersist from 'vite-plugin-optimize-persist'
 import PkgConfig from 'vite-plugin-package-config'
@@ -77,7 +77,8 @@ export default () => {
 			dts: resolve(__dirname, './types/components.d.ts'),
 			resolvers: [
 				IconsResolver(),
-				VueUseComponentsResolver()
+				VueUseComponentsResolver(),
+                AntDesignVueResolver()
 			]
 		}),
 		// 目录下 api 按需自动引入辅助插件
@@ -97,7 +98,8 @@ export default () => {
 				dirResolver({
 					target: 'stores',
 					suffix: 'Store'
-				})
+				}),
+                AntDesignVueResolver()
 			]
 		}),
 		// i18n 国际化支持

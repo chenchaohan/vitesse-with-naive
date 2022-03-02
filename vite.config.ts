@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import Tov from './presets/tov'
+import prese from './presets'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -8,5 +8,5 @@ export default defineConfig({
 			'~/': `${resolve(__dirname, 'src')}/`
 		}
 	},
-	plugins: [Tov()]
+	plugins: [prese()]
 })

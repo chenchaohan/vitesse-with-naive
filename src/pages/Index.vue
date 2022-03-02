@@ -13,5 +13,5 @@ const toggleLocale = () => {
 
     <div class="cursor-pointer m-6" @click="toggleLocale()">language: {{ t('index') }} click me!!</div>
 
-    <el-button class="ml-6">TEST ELEMENT-PLUS</el-button>
+    <a-button class="ml-6">TEST ELEMENT-PLUS</a-button>
 </template>
