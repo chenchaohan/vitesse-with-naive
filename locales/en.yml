@@ -1,5 +1,9 @@
 # English
 
-index: index
-about: about
-not-found: Notfound
+home:
+  index: Index
+  dark: Dark
+  about: About
+
+
+not-found: not-found

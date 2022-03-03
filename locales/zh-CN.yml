@@ -1,5 +1,10 @@
-# 中文
+#中文
 
-index: 主页
-about: 关于
+home:
+  index: 主页
+  dark: 暗色
+  about: 关于
+  login: 登陆
+
+
 not-found: 未找到页面

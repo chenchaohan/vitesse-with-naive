@@ -4,7 +4,7 @@
 
 
 <template>
-    <div></div>
+    <div>test</div>
 </template>
 
 <style scoped>
@@ -13,6 +13,6 @@
 <route lang="yaml">
 meta:
   layout: default
-  title: 模板
+  title: 首页
   menu: true
 </route>

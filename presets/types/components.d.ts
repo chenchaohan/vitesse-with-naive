@@ -4,7 +4,23 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    AAvatar: typeof import('ant-design-vue/es')['Avatar']
     AButton: typeof import('ant-design-vue/es')['Button']
+    AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
+    ADropdown: typeof import('ant-design-vue/es')['Dropdown']
+    ALayout: typeof import('ant-design-vue/es')['Layout']
+    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
+    ALayoutFooter: typeof import('ant-design-vue/es')['LayoutFooter']
+    ALayoutHeader: typeof import('ant-design-vue/es')['LayoutHeader']
+    ALayoutSider: typeof import('ant-design-vue/es')['LayoutSider']
+    AMenu: typeof import('ant-design-vue/es')['Menu']
+    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
+    AppMenu: typeof import('./../../src/components/appMenu/appMenu.vue')['default']
+    ASubMenu: typeof import('ant-design-vue/es')['SubMenu']
+    DefaultHeader: typeof import('./../../src/components/defaultHeader.vue')['default']
+    HomeHeader: typeof import('./../../src/components/homeHeader.vue')['default']
+    IEmojione1stPlaceMedal: typeof import('~icons/emojione/1st-place-medal')['default']
+    MenuCreate: typeof import('./../../src/components/appMenu/menu-create.tsx')['default']
   }
 }
 

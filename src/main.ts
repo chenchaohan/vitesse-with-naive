@@ -10,6 +10,10 @@ import App from './App.vue'
 
 const app = createApp(App)
 
+// import Antd from 'ant-design-vue'
+// app.use(Antd)
+
+
 // 插件自动加载
 const modules = import.meta.globEager('./modules/*.ts')
 Object.values(modules).forEach(v => {
@@ -17,5 +21,9 @@ Object.values(modules).forEach(v => {
 		v.default(app)
 	}
 })
+
+import {store} from '~/stores'
+app.use(store)
+
 
 app.mount('#app')

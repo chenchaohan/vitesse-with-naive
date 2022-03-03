@@ -60,4 +60,5 @@ const back = () => router.push('/')
 <route lang="yaml">
 meta:
   layout: notFound
+  menu: false
 </route>

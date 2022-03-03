@@ -1,6 +1,6 @@
 # vitesse-template-wite-element-plus
 
-一个 ` vite + vue3 + ts ` 开箱即用现代开发模板，使用 `element-plus`。
+一个 ` vite + vue3 + ts ` 开箱即用现代开发模板，使用 `antd-plus`。
 
 ## 特点 🐳
 
