@@ -1,6 +1,6 @@
-# tov-template
+# vitesse-with-naive
 
-一个 ` vite + vue3 + ts ` 开箱即用现代开发模板
+一个 ` vite + vue3 + ts + naive ui ` 开箱即用现代开发模板
 
 <br />
 <br />
