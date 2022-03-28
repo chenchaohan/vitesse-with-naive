@@ -1,37 +1,31 @@
 <template>
-  <a-config-provider :locale="locale === 'en' ? enUS : zhCN">
-    <router-view />
-    </a-config-provider>
+    <n-config-provider :theme="nTheme" :locale="nLocale" :date-locale="nDateLocale">
+        <router-view />
+    </n-config-provider>
 </template>
 
-<script lang="ts" setup>
-import enUS from 'ant-design-vue/es/locale/en_US';
-import zhCN from 'ant-design-vue/es/locale/zh_CN';
-import { useToggleDark } from './composables';
-import { useAppStore } from './stores/modules/appStore';
+<script setup lang="ts">
+import { darkTheme } from 'naive-ui'
+import { zhCN, dateZhCN } from 'naive-ui'
 
+const { t, locale } = useI18n()
+const { isDark, toggleDark } = useDarks()
 
-const {locale} = useI18n()
+const nLocale = computed(() =>
+    locale.value === 'zh-CN' ? zhCN : null
+)
 
-const { isDark } = useToggleDark()
-provide('isDark',isDark)
+const nDateLocale = computed(() =>
+    locale.value === 'zh-CN' ? dateZhCN : null
+)
 
-
-// 根据路由获取侧边栏
-const router = useRouter()
-const fullRouters = router.getRoutes()
-
-
-const store = useAppStore()
-const menuRouter = fullRouters.filter(item => item.name !== undefined && item.meta.menu)
-    store.setMenus(menuRouter.map(item=>{
-        return {
-            menu: item.meta.menu as boolean,
-            title: item.meta.title as string,
-            path: item.path,
-            name: item.name as string
-        }
-}))
-
-
+const nTheme = computed(() =>
+    isDark.value ? darkTheme : null
+)
 </script>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+</style>

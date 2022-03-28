@@ -1,6 +1,9 @@
-# vitesse-template-wite-element-plus
+# tov-template
 
-一个 ` vite + vue3 + ts ` 开箱即用现代开发模板，使用 `antd-plus`。
+一个 ` vite + vue3 + ts ` 开箱即用现代开发模板
+
+<br />
+<br />
 
 ## 特点 🐳
 
@@ -30,7 +33,32 @@
 24. 漂亮的 404页 支持
 25. tsx 支持
 26. gzip 资源压缩支持
+27. 环境变量配置支持
 
+<br />
+<br />
+
+## 克隆模板 🦕
+
+1. Github
+
+```shell
+git clone git@github.com:dishait/tov-template.git
+```
+2. Gitee
+
+```shell
+git clone git@gitee.com:dishait/tov-template.git
+```
+
+3. degit
+
+```shell
+npx degit https://github.com/dishait/tov-template#main
+```
+4. 新的 `Github` 仓库 👉 [Use this template](https://github.com/dishait/tov-template/generate)
+
+<br />
 <br />
 <br />
 
@@ -497,6 +525,34 @@ export default defineStore('counter', {
     <Hello />
 </template>
 ```
+
+同时流行组件库自动引入也是支持的，例如 `Naive ui`。
+
+只需安装依赖。
+
+```shell
+pnpm add naive-ui
+
+# 或者 npm i naive-ui
+# 或者 yarn add naive-ui
+```
+即可在模板中使用。
+
+```html
+<!-- src/pages/index.vue -->
+<template>
+    <n-button type="success">Success</n-button>
+</template>
+```
+目前支持的组件库有:
+
+- [naive ui](https://www.naiveui.com/zh-CN/os-theme)
+- [arco.design](https://arco.design/)
+- [element-plus](https://element-plus.gitee.io/zh-CN/)
+- [ant design of vue](https://next.antdv.com/docs/vue/introduce-cn/)
+- [@vueuse/components](https://vueuse.org/guide/components.html)
+
+具体可见 👉 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
 
 <br />
 
@@ -1057,6 +1113,15 @@ export default defineComponent({
 生产环境下开箱即用的 `gzip` 资源压缩，无需配置。
 
 具体可见 👉 [vite-plugin-compression](https://github.com/vbenjs/vite-plugin-compression)
+
+<br />
+<br />
+<br />
+
+### 27. [环境变量配置支持](https://cn.vitejs.dev/guide/env-and-mode.html)
+
+根目录下有三个环境变量配置文件 `.env`，`.env.development` 和 `.env.production` 用来对项目进行配置。
+
 
 <br />
 <br />

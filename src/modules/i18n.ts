@@ -13,7 +13,7 @@ const messages = Object.fromEntries(
 export default (app: App) => {
 	const i18n = createI18n({
 		legacy: false,
-		locale: 'zh-CN',
+		locale: 'en',
 		messages
 	})
 
