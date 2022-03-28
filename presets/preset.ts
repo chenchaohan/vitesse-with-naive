@@ -19,10 +19,7 @@ import viteCompression from 'vite-plugin-compression'
 
 import { DirResolverHelper } from 'vite-auto-import-resolvers'
 import {
-	ArcoResolver,
 	NaiveUiResolver,
-	AntDesignVueResolver,
-	ElementPlusResolver,
 	VueUseComponentsResolver
 } from 'unplugin-vue-components/resolvers'
 

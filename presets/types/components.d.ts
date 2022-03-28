@@ -9,7 +9,6 @@ declare module 'vue' {
     NDatePicker: typeof import('naive-ui')['NDatePicker']
     NRadio: typeof import('naive-ui')['NRadio']
     NRadioGroup: typeof import('naive-ui')['NRadioGroup']
-    NSpace: typeof import('naive-ui')['NSpace']
     NSwitch: typeof import('naive-ui')['NSwitch']
   }
 }
