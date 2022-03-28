@@ -7,6 +7,7 @@
 <script setup lang="ts">
 import { darkTheme } from 'naive-ui'
 import { zhCN, dateZhCN } from 'naive-ui'
+import useDarks from './composables/useDarks';
 
 const { t, locale } = useI18n()
 const { isDark, toggleDark } = useDarks()
