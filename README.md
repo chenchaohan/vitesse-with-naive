@@ -43,20 +43,15 @@
 1. Github
 
 ```shell
-git clone git@github.com:dishait/tov-template.git
-```
-2. Gitee
-
-```shell
-git clone git@gitee.com:dishait/tov-template.git
+git clone git@github.com:hedongshu/vitesse-with-naive.git
 ```
 
 3. degit
 
 ```shell
-npx degit https://github.com/dishait/tov-template#main
+npx degit https://github.com/hedongshu/vitesse-with-naive
 ```
-4. 新的 `Github` 仓库 👉 [Use this template](https://github.com/dishait/tov-template/generate)
+4. 新的 `Github` 仓库 👉 [Use this template](https://github.com/hedongshu/vitesse-with-naive)
 
 <br />
 <br />
